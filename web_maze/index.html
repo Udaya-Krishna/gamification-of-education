@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maze Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Maze Game</h1>
+    <div id="instructions">
+      <p>
+        Click on the maze cells to navigate. Try to follow the correct path!
+      </p>
+      <button id="show-hint">Show Hint</button>
+    </div>
+    <div id="maze"></div>
+    <div id="controls">
+      <button id="solve-dfs">Solve Using DFS</button>
+      <button id="solve-bfs">Solve Using BFS</button>
+      <button id="generate-maze">Generate Random Maze</button>
+      <button id="try-now-dfs">Try Now Using DFS</button>
+      <button id="try-now-bfs">Try Now Using BFS</button>
+      <button id="save-progress">Save Progress</button>
+      <button id="load-progress">Load Progress</button>
+      <button class="q-mark" onclick="reAssign()">?</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
