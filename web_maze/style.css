@@ -1,0 +1,84 @@
+/* Maze grid styling */
+#maze {
+    display: grid;
+    grid-template-columns: repeat(10, 30px);
+    grid-template-rows: repeat(10, 30px);
+    gap: 2px;
+    margin: 20px auto;
+    border: 2px solid #333;
+}
+
+/* Individual cell styling */
+.cell {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid #ccc;
+    transition: background-color 0.5s ease; /* Smooth transition for hint effect */
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+/* Wall cells */
+.cell.wall {
+    background-color: black;
+    color: white;
+}
+
+/* Marked cells (correct user path) */
+.cell.marked {
+    background-color: lightgreen;
+}
+
+/* Red flash for incorrect path */
+.cell.red {
+    background-color: red;
+}
+
+/* Hint blinking cells */
+.cell.blink {
+    background-color: yellow; /* Path cells blink in yellow for hint */
+}
+
+/* Button styling */
+button {
+    padding: 10px 15px;
+    margin: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Centering the controls below the maze */
+#controls {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Styling for save and load progress messages */
+#save-progress, #load-progress {
+    display: inline-block;
+    background-color: #f39c12;
+    color: white;
+}
+
+#show-hint {
+    background-color: #e74c3c;
+    color: white;
+}
+
+/* Extra button hover effect */
+#show-hint:hover {
+    background-color: #c0392b;
+}
